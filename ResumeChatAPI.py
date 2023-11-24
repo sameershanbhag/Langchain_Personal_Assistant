@@ -33,7 +33,7 @@ QA_CHAIN_PROMPT = PromptTemplate.from_template(PROMPT_TEMPLATE)
 class ResumeChatAPI:
     def __init__(self):
         # Load the ResumePDF for the chatbot
-        self.pdf_reader = PdfReader("./resume/Sameer_Shanbhag_Resume.pdf")
+        self.pdf_reader = PdfReader(f"{os.environ.get('RESUME_PATH')}")
         self.chat_history = []
         self.text = ""  # Text from the resume in chunks
         self.text_splitter = None  # Recursive Text Splitter
