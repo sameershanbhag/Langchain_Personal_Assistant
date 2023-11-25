@@ -11,6 +11,8 @@ A small project that focuses on the Lang Chain implementation of my Personal Ass
 6. Run `pip install -r requirements.txt`
 7. Run StreamLit `streamlit run ResumeChatUI.py`
 
+DEMO: https://personalassistant.streamlit.app/
+
 # Workflow
 
  ![Langchain Workflow](images/flowchart.webp)
